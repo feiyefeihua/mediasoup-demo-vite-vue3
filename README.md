@@ -2,6 +2,10 @@
 
 A demo application of [mediasoup](https://mediasoup.org) **v3**.
 
+Notes on learning vite vue3, Change the demo written by react to Vue.
+
+- original [mediasoup-demo](https://github.com/versatica/mediasoup-demo)
+
 Try it online at https://vc.feiyefeihua.top.
 
 ## Resources
@@ -28,7 +32,7 @@ $ npm install
 $ npm run dev
 ```
 
-**NOTE:** The wss connects to vc.feiyefeihua.top by default.
+**NOTE:** The wss connects to vc.feiyefeihua.top by default in src/js/urlFactory.js
 
 - Enjoy.
 
