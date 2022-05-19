@@ -1,0 +1,60 @@
+// @import "nib";
+// @include global-reset();
+
+@import "./variables";
+@import "./mixins";
+@import "./fonts";
+@import "./reset";
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+
+  background: #141e30;
+  background: linear-gradient(to top, #243b55, #141e30);
+  font-family: "Roboto";
+  font-weight: 300;
+
+  @include desktop() {
+    font-size: 16px;
+  }
+
+  @include mobile() {
+    font-size: 12px;
+  }
+}
+
+body {
+  height: 100%;
+}
+
+#app {
+  height: 100%;
+  width: 100%;
+
+  @import "./components/Room";
+  @import "./components/Me";
+  @import "./components/ChatInput";
+  @import "./components/Peers";
+  @import "./components/Peer";
+  @import "./components/PeerView";
+  @import "./components/Stats";
+  @import "./components/Notifications";
+  @import "./components/NetworkThrottle";
+}
+#mediasoup-demo-app-media-query-detector {
+  position: relative;
+  z-index: -1000;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  width: 1px;
+
+  @include desktop() {
+  }
+
+  @include mobile() {
+    display: none;
+    position: fixed;
+  }
+}
